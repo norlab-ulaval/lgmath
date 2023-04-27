@@ -6,6 +6,7 @@ option(USE_AMENT "Use ament_cmake to build lgmath for ROS2." ON)
 # Compiler setup
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 add_compile_options(-march=native -O3 -Wall -pedantic)
 
 ## cmake flow (default)
